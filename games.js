@@ -5,7 +5,7 @@ const games = ` [
     "description": "An exciting 5e RPG supplement that heroically represents pre-Columbian American cultures and mythologies",
     "pledged": 1572,
     "goal": 10000,
-    "backers": 9,
+    "backers": 9, 
     "img": "./assets/heroes_of_mythic_americas.png"
   },
   {
