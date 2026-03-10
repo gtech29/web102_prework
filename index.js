@@ -162,7 +162,6 @@ const newPara = document.createElement("p");
 newPara.innerHTML = unfundedStr;
 descriptionContainer.appendChild(newPara);
 
-
 /************************************************************************************
  * Challenge 7: Select & display the top 2 games
  * Skills used: spread operator, destructuring, template literals, sort
@@ -176,7 +175,17 @@ const sortedGames = GAMES_JSON.sort((item1, item2) => {
 });
 
 // use destructuring and the spread operator to grab the first and second games
+const [a, b] = sortedGames
+console.log(a, b);
 
-// create a new element to hold the name of the top pledge game, then append it to the correct element
+// create a new element to hold the name of the top pledge game, 
+// then append it to the correct element
+const topPledge = document.createElement("p");
+topPledge.innerHTML = a.name;
+firstGameContainer.appendChild(topPledge);
+
 
 // do the same for the runner up item
+const bottomPledge = document.createElement("p");
+bottomPledge.innerHTML = b.name;
+secondGameContainer.appendChild(bottomPledge)
